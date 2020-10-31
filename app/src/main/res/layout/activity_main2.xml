@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/scrollView">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".MainActivity5">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:background="@drawable/e"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageButton
+                android:layout_marginLeft="10dp"
+                android:id="@+id/back"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:background="@drawable/g"
+                android:layout_weight="1"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:textSize="25dp"
+                android:text="个人成绩输入"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:layout_weight="15"/>
+
+            <ImageButton
+                android:layout_marginRight="10dp"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_weight="1"
+                android:background="@drawable/h" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:text="学科名称:"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:typeface="serif" />
+
+            <EditText
+                android:id="@+id/name_first_input"
+                android:gravity="top"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="50dp"
+                android:layout_weight="2"
+                android:hint="NAME" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:text="学科学分:"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:typeface="serif" />
+
+            <EditText
+                android:maxLength="1"
+                android:gravity="top"
+                android:inputType="numberDecimal"
+                android:id="@+id/credits_first_input"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="50dp"
+                android:layout_weight="2"
+                android:hint="CREDITS" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:text="学科成绩:"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:typeface="serif" />
+
+            <EditText
+                android:maxLength="4"
+                android:inputType="numberDecimal"
+                android:gravity="top"
+                android:id="@+id/grades_first_input"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="50dp"
+                android:layout_weight="2"
+                android:hint="GRADES" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/first_cut_off"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="50dp"
+            android:src="@drawable/d" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:text="学科名称:"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:typeface="serif" />
+
+            <EditText
+                android:id="@+id/name_second_input"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="50dp"
+                android:layout_weight="2"
+                android:hint="NAME" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:text="学科学分:"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:typeface="serif" />
+
+            <EditText
+                android:maxLength="1"
+                android:inputType="numberDecimal"
+                android:id="@+id/credits_second_input"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="50dp"
+                android:layout_weight="2"
+                android:hint="CREDITS" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:text="学科成绩:"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:typeface="serif" />
+
+            <EditText
+                android:maxLength="4"
+                android:inputType="numberDecimal"
+                android:id="@+id/grades_second_input"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="50dp"
+                android:layout_weight="2"
+                android:hint="GRADES" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/second_cut_off"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="50dp"
+            android:src="@drawable/d" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:text="学科名称:"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:typeface="serif" />
+
+            <EditText
+                android:id="@+id/name_third_input"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="50dp"
+                android:layout_weight="2"
+                android:hint="NAME" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:text="学科学分:"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:typeface="serif" />
+
+            <EditText
+                android:maxLength="1"
+                android:inputType="numberDecimal"
+                android:id="@+id/credits_third_input"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="50dp"
+                android:layout_weight="2"
+                android:hint="CREDITS" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:text="学科成绩:"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:typeface="serif" />
+
+            <EditText
+                android:maxLength="4"
+                android:inputType="numberDecimal"
+                android:id="@+id/grades_third_input"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="50dp"
+                android:layout_weight="2"
+                android:hint="GRADES" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/third_cut_off"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="50dp"
+            android:src="@drawable/d" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:text="学科名称:"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:typeface="serif" />
+
+            <EditText
+                android:id="@+id/name_forth_input"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="50dp"
+                android:layout_weight="2"
+                android:hint="NAME" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:text="学科学分:"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:typeface="serif" />
+
+            <EditText
+                android:maxLength="1"
+                android:inputType="numberDecimal"
+                android:id="@+id/credits_forth_input"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="50dp"
+                android:layout_weight="2"
+                android:hint="CREDITS" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:text="学科成绩:"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:typeface="serif" />
+
+            <EditText
+                android:maxLength="4"
+                android:inputType="numberDecimal"
+                android:id="@+id/grades_forth_input"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="50dp"
+                android:layout_weight="2"
+                android:hint="GRADES" />
+        </LinearLayout>
+        <ImageButton
+            android:id="@+id/right"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="140dp"
+            android:layout_below="@+id/text_view"
+            android:background="@drawable/n" />
+
+        <ImageView
+            android:layout_marginTop="10dp"
+            android:id="@+id/bottom_margin"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:background="@drawable/e"/>
+
+    </LinearLayout>
+</ScrollView>
